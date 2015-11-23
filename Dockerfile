@@ -6,7 +6,7 @@ RUN apt-get update && \
 
 ENV DISTRIBUTION_DIR /go/src/github.com/docker/distribution
 ENV GOPATH $DISTRIBUTION_DIR/Godeps/_workspace:$GOPATH
-ENV DOCKER_BUILDTAGS include_rados include_oss include_gcs
+ENV DOCKER_BUILDTAGS include_rados include_oss include_gcs include_kodo
 
 WORKDIR $DISTRIBUTION_DIR
 COPY . $DISTRIBUTION_DIR
